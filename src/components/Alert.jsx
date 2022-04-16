@@ -1,8 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export const Alert = () => {
   return (
-    <div class="alert alert-error shadow-lg max-w-md  absolute font-bold top-20">
+    <motion.div initial={{scale:0}} animate={{scale:1}} transition={{duration:0.5,bounce:0.8,type:'spring'}} className="alert alert-error shadow-lg max-w-md  absolute font-bold top-20">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -19,6 +20,6 @@ export const Alert = () => {
         </svg>
         <span>Error! Task failed. </span>
       </div>
-    </div>
+    </motion.div>
   );
 };
