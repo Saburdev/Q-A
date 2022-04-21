@@ -92,4 +92,4 @@ function TestContextProvider({ children }) {
     )
 }
 
-export default TestContext;
+export default TestContextProvider;

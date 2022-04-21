@@ -27,11 +27,11 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
           <Route index element={<Auth />} />
-          <Route path={"/tasks"} element={<Tasks />}>
-            <Route path="/task/:id" element={<Task />} />
+          <Route path="/tasks" element={<Tasks />}>
+            <Route path=":id" element={<Task />} />
           </Route>
-        </Routes>
         <Route path={"/result"} element={<Result />} />
+        </Routes>
     </AnimatePresence>
     </div >
   );
